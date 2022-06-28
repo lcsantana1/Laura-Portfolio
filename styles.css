@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background: #80633a;
+    color: #fff;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+nav a{
+    padding-left: 30px;
+}
+
+
+main {
+max-width: 88%;
+padding: 0 20px;
+}
+
+
+section {
+ display: flex;
+ margin: 20px 0;
+ padding: 10px 0;
+ flex-wrap: wrap;
+ align-items: stretch;
+ justify-content: space-between;
+}
+
+section h2{
+    border-right: 2px solid black;
+    padding-right: 15px;
+    text-align: right;
+    flex: 0 0 20%;
+    line-height: 1;
+}
+section > div {
+    flex: 0 0 75%;
+}
+section div p{
+    text-align: center;
+    padding-left: 15px;
+}
+
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Image Placeholders */
+.project {
+    background-color: rgb(245, 107, 107);
+    border: 1px solid black;
+    min-height: 200px;
+    max-height: 200px;
+    padding: 0 0 20px 0;
+    margin: 10px;
+    flex-basis: calc(50% - 22px);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    align-content: right;
+}
+.project:first-child{
+    min-height: 300px;
+    flex-basis: 100%;
+}
+.project div {
+    background-color: aqua;
+    padding: 5px;
+    text-align: right;
+}
+.project div h3{
+    font-size: 18px;
+}
+
+.horiseon{
+    background-image: url('https://user-images.githubusercontent.com/106941418/174198329-dac830c3-429d-4302-b8be-6b36c9c0a295.png');
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+}
+
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color
+@media screen and (max-width: 992px) {
+    header {
+        background: #773c35;
+    }
+}
+
+/* Large smartphones - navbar changes color */
+/* @media screen and (max-width: 768px) {
+    nav {
+        background-color: #bb8588;
+    }
+} */
+
+/* Small smartphones - image placeholders change color */
+/* @media screen and (max-width: 576px) {
+    .sample-img {
+        background-color: #8ac4ff;
+    }
+} */ 
